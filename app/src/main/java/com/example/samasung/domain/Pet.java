@@ -1,9 +1,12 @@
 package com.example.samasung.domain;
 
+import android.graphics.drawable.Drawable;
+
 public class Pet {
     private String name;
     private String breed;
     private String imageURL;
+    private Drawable image;
 
     public Pet(String name, String breed, String imageURL) {
         this.name = name;
@@ -21,5 +24,13 @@ public class Pet {
 
     public String getImageURL() {
         return imageURL;
+    }
+
+    public Drawable getImage() {
+        return image;
+    }
+
+    public void setImage(Drawable image) {
+        this.image = image;
     }
 }
